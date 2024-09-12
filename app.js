@@ -9,17 +9,17 @@ import {
   getActivities,
   createActivities,
   replaceActivity,
-  deleteActivity,
+  deleteActivity                     ,
 } from "./functions/functions.js";
 
 //server parameters
-const app = express();
+const app = express                     ();
 const port = 3000;
 
 //middleware
 app.use(helmet());
 
-app.use(express.json());
+app.use(express.json                       ());
 
 //homescreen- should return "Hello world"
 app.get("/", (req, res) => {
